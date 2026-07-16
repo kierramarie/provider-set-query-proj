@@ -6,6 +6,8 @@ terraform {
   }
 }
 
+variable "TFE_TOKEN" {}
+
 resource "tfe_provider_set" "test1" {
   name            = "test-set1"
   description     = "Reusable provider config for selected workspaces"
