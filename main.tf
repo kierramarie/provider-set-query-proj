@@ -6,7 +6,7 @@ terraform {
   }
 }
 
-variable "TFE_TOKEN" {}
+variable "LOCAL_TFE_TOKEN" {}
 
 resource "tfe_provider_set" "test1" {
   name            = "test-set1"
