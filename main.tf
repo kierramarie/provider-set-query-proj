@@ -17,7 +17,7 @@ resource "tfe_provider_set" "test1" {
   description     = "Reusable provider config for selected workspaces"
   provider_source = "registry.terraform.io/hashicorp/aws"
   global          = true
-  organization    = "hashicorp"
+  organization    = "tf-no-code"
 
   provider_config_hcl = <<-EOT
   provider "aws" {
@@ -31,7 +31,7 @@ resource "tfe_provider_set" "test2" {
   description     = "Reusable provider config for selected workspaces"
   provider_source = "registry.terraform.io/hashicorp/aws"
   global          = true
-  organization    = "hashicorp"
+  organization    = "tf-no-code"
 
   provider_config_hcl = <<-EOT
   provider "aws" {
