@@ -6,12 +6,6 @@ terraform {
   }
 }
 
-provider "tfe" {
-  hostname = "tfcdev-aedce56a.ngrok.app"
-}
-
-variable "LOCAL_TFE_TOKEN" {}
-
 resource "tfe_provider_set" "test1" {
   name            = "provset1"
   description     = "Reusable provider config for selected workspaces"
